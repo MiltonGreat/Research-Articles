@@ -1,5 +1,36 @@
 # COVID-19 Research Articles Analysis
 
+### Problem Statement
+
+The rapid growth of COVID-19 research publications makes it challenging to extract actionable insights.
+
+### Solution Approach:
+
+Data: Dataset of 29,500+ COVID-19 research articles.
+
+Methods:
+
+- Tokenized text and applied TF-IDF for keyword extraction.
+- Used Latent Dirichlet Allocation (LDA) for topic modeling.
+- Conducted sentiment analysis to gauge research trends.
+- Tools: Python (NLTK, SpaCy, Gensim), Tableau.
+
+### Results: 
+
+Identified 5 key research topics and trends, providing a comprehensive overview of the literature.
+
+### Challenges: 
+
+Handling unstructured text data and ensuring robust preprocessing.
+
+### Future Directions
+
+Apply advanced models like BERT for deeper insights.
+
+### Key Skills
+
+NLP, topic modeling, sentiment analysis, Python.
+
 ### Overrview
 
 This project uses NLP (Natural Language Processing) techniques to analyze a dataset of research articles related to COVID-19. The dataset includes metadata and abstracts from 29,500 articles, facilitating insights into publication trends, topic modeling, and sentiment analysis. The goal is to identify key research topics, trends, and sentiment from the abstracts to assist researchers in navigating the extensive literature on COVID-19.
