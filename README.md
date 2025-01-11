@@ -1,103 +1,81 @@
 # COVID-19 Research Articles Analysis
 
+## Overview
+
+The rapid growth of COVID-19 research has resulted in a vast collection of literature, making it challenging for researchers to keep up. This project applies Natural Language Processing (NLP) techniques to analyze over 29,500 research articles, extracting actionable insights on key research topics, trends, and sentiment. The analysis provides a comprehensive overview of the state of COVID-19 research, aiding researchers in navigating this extensive literature more effectively.
+
 ### Problem Statement
 
-The rapid growth of COVID-19 research publications makes it challenging to extract actionable insights.
+The overwhelming volume of COVID-19-related publications makes it difficult to identify key areas of focus, trends, and actionable insights. This project addresses this issue by using NLP techniques to analyze research articles, uncover prominent topics, and assess overall sentiment in the literature.
+
+### Dataset
+
+- Source: COVID-19 Research Articles Dataset.
+- Size: 29,500 articles.
+- Key Features:
+    - Title: Research paper title.
+    - Abstract: Summary of the research (used for NLP tasks).
+    - Publish Time: Date of publication.
+    - Journal: Journal where the article was published.
+    - Authors: List of authors.
 
 ### Solution Approach:
 
-Data: Dataset of 29,500+ COVID-19 research articles.
-
-Methods:
-
-- Tokenized text and applied TF-IDF for keyword extraction.
-- Used Latent Dirichlet Allocation (LDA) for topic modeling.
-- Conducted sentiment analysis to gauge research trends.
-- Tools: Python (NLTK, SpaCy, Gensim), Tableau.
-
-### Results: 
-
-Identified 5 key research topics and trends, providing a comprehensive overview of the literature.
-
-### Challenges: 
-
-Handling unstructured text data and ensuring robust preprocessing.
-
-### Future Directions
-
-Apply advanced models like BERT for deeper insights.
-
-### Key Skills
-
-NLP, topic modeling, sentiment analysis, Python.
-
-### Overrview
-
-This project uses NLP (Natural Language Processing) techniques to analyze a dataset of research articles related to COVID-19. The dataset includes metadata and abstracts from 29,500 articles, facilitating insights into publication trends, topic modeling, and sentiment analysis. The goal is to identify key research topics, trends, and sentiment from the abstracts to assist researchers in navigating the extensive literature on COVID-19.
-
-### Dataset 
-
-- Source: A collection of COVID-19 research articles.
-- Total Entries: 29,500
-- Columns: 14, including metadata such as title, abstract, authors, and publish_time.
-
-#### Key Columns
-
-- title: The title of the research paper.
-- abstract: Abstract of the research paper (textual data used for NLP tasks).
-- publish_time: Date of publication.
-- journal: Journal in which the article was published.
-- authors: Authors of the paper.
-
-#### Missing Values
-
-Significant missing values exist in columns like publish_time, journal, and has_full_text. These were handled through imputation or exclusion, depending on the analysis.
-
-### Project Workflow
-
 1. Data Preprocessing
-- Removed duplicates and handled missing values.
-- Converted publish_time to datetime format.
-- Preprocessed abstracts by: Tokenizing, Removing stopwords, Lowercasing and removing non-alphanumeric characters.
+- Removed duplicates and handled missing values (e.g., imputed or excluded incomplete records).
+- Converted publication dates into a datetime format for temporal analysis.
+- Preprocessed abstracts through:
+    - Tokenization.
+    - Removal of stopwords.
+    - Lowercasing and removal of non-alphanumeric characters.
 
 2. Exploratory Data Analysis (EDA)
-- Abstract Length Distribution: Visualized the variability in abstract lengths.
-- Source and Journal Analysis: Identified top sources and journals publishing COVID-19 research.
+- Abstract Length Distribution: Analyzed and visualized variability in abstract lengths.
+- Source and Journal Analysis: Identified the most prolific journals and sources contributing to COVID-19 research.
 
 3. Topic Modeling
-
-Using Latent Dirichlet Allocation (LDA), the following topics were identified:
-- Topic 1: Public health and epidemic data.
-- Topic 2: Clinical and respiratory infections.
-- Topic 3: RNA synthesis and viral genome studies.
-- Topic 4: Immune response and protein expression.
-- Topic 5: Influenza strains and vaccine research.
+- Applied Latent Dirichlet Allocation (LDA) to identify five key topics:
+    - Topic 1: Public health and epidemic data.
+    - Topic 2: Clinical and respiratory infections.
+    - Topic 3: RNA synthesis and viral genome studies.
+    - Topic 4: Immune response and protein expression.
+    - Topic 5: Influenza strains and vaccine research.
 
 4. Sentiment Analysis
-- Performed sentiment analysis on abstracts using TextBlob.
-- Visualized sentiment distribution to identify overall polarity trends in the research articles.
+- Conducted sentiment analysis on abstracts using TextBlob.
+- Visualized sentiment polarity (positive, neutral, negative) to assess trends in research focus and tone.
 
 ### Key Results
 
-Most abstracts had neutral or positive sentiment, reflecting the research community's emphasis on constructive insights and findings.
-- Topic 1: Focused on public health and epidemic data.
-- Topic 2: Centered on clinical studies and respiratory infections.
-- Topic 3: Explored RNA synthesis and genome research.
-- Topic 4: Investigated immune responses and protein-level interactions.
-- Topic 5: Discussed influenza strains, vaccine development, and species transmission.
+Topics Identified:
+- Public Health: Studies on epidemic modeling and population-level health impacts.
+- Clinical Focus: Research on respiratory infections and clinical management.
+- Genomic Studies: Insights into RNA synthesis and viral genomes.
+- Immunology: Investigations into immune responses and protein-level interactions.
+- Vaccines: Studies on influenza strains, vaccine development, and species transmission.
 
-### Visualizations
+Sentiment Analysis:
+- Most abstracts exhibited neutral or positive sentiment, reflecting the research community's constructive focus on solutions and findings.
 
-- Abstract Length Distribution: Histogram of word counts in abstracts.
-- Top Sources and Journals: Bar plots of the most prolific contributors.
-- Sentiment Analysis: Distribution of sentiment polarity across abstracts.
-- Topic Visualization: Word clouds for each topic identified through LDA.
+Visual Insights:
+- Abstract Length Distribution: Highlighted variability, with most abstracts being concise but informative.
+- Top Journals: Identified leading publishers contributing to COVID-19 research.
+- Word Clouds: Created for each topic to emphasize key terms and themes.
 
-### Future Work
+### Challenges: 
 
-- Named Entity Recognition (NER): Extract key entities such as drug names, authors, or affiliations.
-- Temporal Analysis: Analyze trends over time based on publish_time.
-- Cluster Analysis: Group similar abstracts based on semantic similarity.
+- Unstructured Text: Required extensive preprocessing to handle variability in abstract quality and content.
+- Class Imbalance in Sentiment: Addressed through normalization techniques to ensure robust analysis.
+
+### Future Directions
+
+1. Named Entity Recognition (NER): Extract specific entities like drug names, affiliations, or geographic regions.
+
+2. Temporal Analysis: Study trends over time to track research focus shifts or emerging areas of interest.
+
+3. Advanced Models: Leverage transformer-based models (e.g., BERT) for deeper insights and improved text understanding.
+
+4. Semantic Clustering: Group abstracts by similarity to identify subfields within broader topics.
 
 ### Source
 
