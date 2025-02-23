@@ -1,4 +1,4 @@
-# Data Science Projects: COVID-19 and Health Insights
+# COVID-19 and Health Insights
 
 ## Overview
 
