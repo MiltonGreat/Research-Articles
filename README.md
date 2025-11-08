@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-During a crisis, data without insight is noise. This project performs a strategic analysis of COVID-19 in Canada, applying a governance framework to public health data. We move beyond descriptive statistics to deliver a **provincial impact audit**, identify **temporal risk patterns**, and analyze the **scientific community's research focus**. The goal: to transform raw data into actionable intelligence for policymakers and public health leaders.
+Before deploying AI to fight the next pandemic, we must first conduct a full diagnostic on the last one. If biased data is the pathogen, then rigorous data auditing is the vaccine. This project performs a retrospective diagnostic audit of Canada's COVID-19 data, treating the pandemic as a 'patient' to understand its unique clinical history—its hotspots, its vital signs, and its treatment history. The insights generated here are not just historical records; they are the baseline lab results and stress tests required to train, validate, and govern future AI systems for public health, ensuring they are built on a foundation of truth and equity.
 
 ## The Intelligence Gap
 
@@ -28,7 +28,7 @@ This project was built to answer these questions.
 
 ## Conclusion: Building a Data-Driven Public Health Future
 
-The value of this analysis is not in looking back, but in planning forward. By implementing a governed, analytical approach to health data, we can build a more resilient system—one that identifies hotspots early, anticipates seasonal surges, and critically evaluates the research landscape. This is the foundation of modern, intelligence-driven public health.
+This project demonstrates that the first step in AI Governance is understanding the anatomy of the problem you are trying to solve. You cannot govern an AI for public health if you haven't first diagnosed the public health data itself. The 'prognosis' for trustworthy pandemic AI is entirely dependent on the rigor of this initial audit. By treating our historical data with the same care as a patient chart, we don't just document the past—we inoculate our future systems against failure and bias, building a more resilient and equitable defense for the next global health crisis.
 
 ### Source
 
